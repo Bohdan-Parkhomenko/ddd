@@ -105,7 +105,7 @@ a {
 }
 .btn-success {
   --bs-btn-color: #8E99AB;
-  --bs-btn-bg: #ffffff;
+  --bs-btn-bg: #f8f9fa;
   --bs-btn-border-color: #EAECF0;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #68878d;

@@ -109,7 +109,7 @@ const Main = () => {
                     </p>
 
                     <Dropdown
-                        className="wd w-62.25rem p-2.5 items-center gap-2 rounded-md border border-gray-300 bg-gray-50 mb-4">
+                        className="wd w-62.25rem p-2.5 items-center gap-2 rounded-md border border-gray-300 bg-gray-50 mb-5">
                         <Dropdown.Toggle
                             variant="success" id="dropdown-basic"
                             className="flex flex-col flex-1 text-gray-600 text-md font-normal w-full"
