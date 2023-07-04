@@ -44,7 +44,7 @@ function Page3() {
 }
 
 function Settings() {
-    return <div>Settings123</div>
+    return <div>Settings</div>
 }
 
 export default App;

@@ -24,7 +24,7 @@ const Layout = () => {
                 <div className={"mt-8"}>
                     {menuItems.map((menuItem) => (
                         <Link to={menuItem.href}>
-                            <div className={"flex items-center ml-4 mt-2 mr-4 mb-2 menu-items"}>
+                            <div className={"flex items-center ml-4 mt-2 mr-4 mb-2 py-1 pl-2 menu-items"}>
                                 <img src={menuItem.image} alt={menuItem.title}/>
                                 <p
                                     key={menuItem.href}
@@ -40,7 +40,8 @@ const Layout = () => {
                         </Link>
                     ))}
                 </div>
-                <Link to={Settings.href} className="absolute bottom-0 mb-16 settings">
+                <Link to={Settings.href}
+                      className="absolute bottom-0  settings flex items-center ml-2 mt-2 mb-2 py-1 menu-items">
                     <div className={"flex items-center ml-4 mt-2 mr-4 mb-2"}>
                         <img src={Settings.image} alt={Settings.title}/>
                         <p
