@@ -30,32 +30,26 @@ const Main = () => {
                 <Row className="flex justify-between">
                     {stateItems.map((item) => (
                         <Col className="flex flex-col items-center">
-                            <div className={`circle circle-on rounded-full flex items-center ${getCircleClass(item.index)}`}></div>
+                            <div className={`circle rounded-full flex items-center ${getCircleClass(item.index)}`}></div>
                             <p className="mt-2 text-black text-sm font-medium">{item.title}</p>
                         </Col>
                     ))}
                 </Row>
             </div>
 
-            <Row className="mb-4 ">
-                <Col  className="w-508 h-131 flex-shrink-0 rounded-lg bg-white shadow-md mr-2 ml-10">
+            <Row className="mb-3 ">
+                <Col  className="w-508 h-131 flex-shrink-0 rounded-lg bg-white shadow-md mr-3 ml-10">
 
                     <div className="pt-2 pr-2 pb-1 pl-2">
                         <p className="text-black text-lg font-medium leading-7 mb-3">Information</p>
 
                         <Row>
-                            <Col>
-                                <p className="text-black text-default font-medium leading-6 mb-2">Info Number:</p>
-
-                            </Col>
-                            <Col>
-                                <p className={"text-right text-default"}>903049</p>
-
-                            </Col>
+                            <Col><p className="text-black text-default font-medium leading-6 mb-2">Info Number:</p></Col>
+                            <Col><p className={"text-right text-default text-gray-600"}>903049</p></Col>
                         </Row>
                         <Row>
                             <Col><p className="text-black text-default font-medium leading-6">Pick up Place:</p></Col>
-                            <Col><p className={"text-right text-default"}>Sweden</p></Col>
+                            <Col><p className={"text-right text-default text-gray-600"}>Sweden</p></Col>
                         </Row>
                     </div>
                 </Col>

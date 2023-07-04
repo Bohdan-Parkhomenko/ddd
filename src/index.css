@@ -67,6 +67,10 @@ code {
   font-weight: 500;
   line-height: 24px;
 }
+
+.text-gray-600{
+  color: #8E99AB;
+}
 .row {
   --bs-gutter-x: 0rem;
 }
