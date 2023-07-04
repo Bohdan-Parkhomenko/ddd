@@ -41,7 +41,7 @@
 
 .line {
     /*display: flex;*/
-    width: 100px;
+    width: 200px;
     border: none;
     margin-top: 1.9375rem;
 
@@ -52,6 +52,19 @@
     border-top: 0.2rem dotted #e9ebef;
 }
 
+
+
+@media screen and (max-width: 1800px) {
+    .line {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .line {
+        width: 100px;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     .line {
