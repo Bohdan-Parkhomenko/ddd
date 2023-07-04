@@ -17,6 +17,13 @@ const Main = () => {
             return "circle-off";
         }
     }
+    function getLineClass(state) {
+        if (state <= stateActive) {
+            return "line";
+        } else {
+            return "line-off";
+        }
+    }
 
 
     return (
@@ -28,11 +35,16 @@ const Main = () => {
             <div className="steps">
                 <Row className="flex justify-between">
                     {stateItems.map((item) => (
+                        <>
                         <Col className="flex flex-col items-center">
                             <div
                                 className={`circle rounded-full flex items-center ${getCircleClass(item.index)}`}></div>
                             <p className="mt-2 text-black text-sm font-medium">{item.title}</p>
                         </Col>
+                        {item.index !== stateItems.length && (
+                            <div className={`line h-100 flex ${getLineClass(item.index)}`} />
+                        )}
+                        </>
                     ))}
                 </Row>
             </div>

@@ -38,3 +38,23 @@
     font-weight: 500;
     line-height: 1.6875rem;
 }
+
+.line {
+    /*display: flex;*/
+    width: 100px;
+    border: none;
+    margin-top: 1.9375rem;
+
+    border-top: 0.2rem dotted #1FC0AE;
+}
+
+.line-off {
+    border-top: 0.2rem dotted #e9ebef;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .line {
+        display: none;
+    }
+}
